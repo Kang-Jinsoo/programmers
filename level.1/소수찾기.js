@@ -4,9 +4,12 @@
 
 function solution(n) {
     let answer = [];
-    for(let i = 2; i <= n; i++ ){
-
+    for(let i = 2; i <= n; i++){
+        if(i % n === 0){
+            answer.push(i)
+        }
     }
+    return answer
 }
 
 console.log(solution(8))
